@@ -68,7 +68,7 @@ function loadSlider() {
 
 // Using DOMContentLoaded instead of window.onload
 document.addEventListener('DOMContentLoaded', function() {
-    loadComponent("website-navbar", "navfile.html");
+    loadComponent("website-navbar", "/portfolio/navfile.html");
     loadSlider();
     // loadComponent("website-footer", "footerfile.html");
 });
