@@ -1,5 +1,5 @@
 function loadComponent(id, file) {
-    fetch(`/portfolio/${file}`)
+    fetch(`https://cmcburnieucf.github.io/portfolio/${file}`)
         .then(response => response.text())
         .then(data => {
             document.getElementById(id).innerHTML = data;
