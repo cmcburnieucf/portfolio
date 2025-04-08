@@ -41,6 +41,7 @@ function loadSlider() {
 				</div>`;
 
 	const currentPage = window.location.pathname;
+	console.log(`For the Slider: ${currentPage}`);
 	const config = pageSliderConfigs[currentPage];
 
 	if (config) {
