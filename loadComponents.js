@@ -9,7 +9,7 @@ function loadComponent(id, file) {
 
 function loadSlider() {
 	const pageSliderConfigs = {
-        '/portfolio/index.html':
+        '/portfolio/':
 	    {
 			numItems: 3,
             1:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
