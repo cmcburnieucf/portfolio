@@ -1,12 +1,10 @@
-const baseURL = '/portfolio/';
-
 function loadComponent(id, file) {
-    fetch(`${baseURL}${file}`)
+    fetch(`/portfolio/${file}`)
         .then(response => response.text())
         .then(data => {
             document.getElementById(id).innerHTML = data;
         })
-        .catch(error => console.error(`Error loading ${file}:`, error));
+        .catch(error => console.error(`Error loading /portfolio/${file}:`, error));
 }
 
 function loadSlider() {
