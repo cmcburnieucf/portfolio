@@ -1,6 +1,4 @@
-const baseURL = (window.location.pathname.includes('/tech-com/') || window.location.pathname.includes('/projects/'))
-    ? '/portfolio/' 
-    : '/';
+const baseURL = '/portfolio/';
 
 function loadComponent(id, file) {
     fetch(`${baseURL}${file}`)
