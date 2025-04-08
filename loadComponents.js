@@ -1,5 +1,9 @@
+const baseURL = (window.location.pathname.includes('/tech-com/') || window.location.pathname.includes('/projects/'))
+    ? '/portfolio/' 
+    : '/';
+
 function loadComponent(id, file) {
-    fetch(file)
+    fetch(`${baseURL}${file}`)
         .then(response => response.text())
         .then(data => {
             document.getElementById(id).innerHTML = data;
@@ -68,7 +72,7 @@ function loadSlider() {
 
 // Using DOMContentLoaded instead of window.onload
 document.addEventListener('DOMContentLoaded', function() {
-    loadComponent("website-navbar", "/portfolio/navfile.html");
+    loadComponent("website-navbar", "navfile.html");
     loadSlider();
     // loadComponent("website-footer", "footerfile.html");
 });
