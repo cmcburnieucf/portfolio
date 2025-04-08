@@ -9,19 +9,19 @@ function loadComponent(id, file) {
 
 function loadSlider() {
 	const pageSliderConfigs = {
-        '/index.html':
+        '/portfolio/index.html':
 	    {
 			numItems: 3,
-            1:{imgSrc:'tobesoon.png', imgAlt:'Coming Soon'},
-            2:{imgSrc:'tobesoon.png', imgAlt:'Coming Soon'},
-            3:{imgSrc:'tobesoon.png', imgAlt:'Coming Soon'}
+            1:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
+            2:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
+            3:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'}
 		},
-        '/projects/home.html':
+        '/portfolio/projects/home.html':
 		{
 			numItems: 3,
-            1:{imgSrc:'tobesoon.png', imgAlt:'Coming Soon'},
-            2:{imgSrc:'tobesoon.png', imgAlt:'Coming Soon'},
-            3:{imgSrc:'tobesoon.png', imgAlt:'Coming Soon'}
+            1:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
+            2:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
+            3:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'}
 		}
 	};
 
