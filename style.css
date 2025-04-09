@@ -1,9 +1,10 @@
 body {
-    background: url('https://cmcburnieucf.github.io/portfolio/images/background-img.png') no-repeat center fixed; 
+    background:url('https://cmcburnieucf.github.io/portfolio/images/background-img.png') no-repeat center fixed; 
     background-size: cover;
 }
 .webpage-content {
-    padding:30px 100px 30px 100px;
+    margin:30px 100px 30px 100px;
+    padding:20px 50px 20px 50px;
     background-color: white;
 }
 
@@ -12,7 +13,9 @@ body {
 }
 
 .webpage-header {
+    margin-top: 50px;
     padding-top: 50px;
+    margin-bottom: 25px;
     padding-bottom: 12.5px;
 }
 
