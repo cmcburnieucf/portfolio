@@ -6,6 +6,11 @@
     text-align:center;
 }
 
+.webpage-header {
+    padding-top: 50px;
+    padding-bottom: 12.5px;
+}
+
 #self-potrait {
     margin: auto;
     display: flex;
