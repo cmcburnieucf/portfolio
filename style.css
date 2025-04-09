@@ -8,10 +8,6 @@
 
 #self-potrait {
     margin: auto;
-    max-width: 50%;
-    height: auto;
-    object-fit: cover;
-    object-fit: contain;
     overflow: hidden;
     border: 3px solid navy;
     border-radius: 50%;
