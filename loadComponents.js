@@ -16,6 +16,13 @@ function loadSlider() {
             2:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
             3:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'}
 		},
+	'/portfolio/index.html':
+	    {
+			numItems: 3,
+            1:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
+            2:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'},
+            3:{imgSrc:'https://cmcburnieucf.github.io/portfolio/images/tobesoon.png', imgAlt:'Coming Soon'}
+		},
         '/portfolio/projects/home.html':
 		{
 			numItems: 3,
