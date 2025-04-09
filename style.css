@@ -5,3 +5,11 @@
 .webpage-heading {
     text-align:center;
 }
+
+#self-potrait {
+    margin: auto;
+    width: 50%;
+    border: 3px solid navy;
+    border-radius: 30px;
+    padding: 10px;
+}
