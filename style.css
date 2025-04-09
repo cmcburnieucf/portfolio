@@ -1,5 +1,5 @@
 body {
-    background-image:url('https://cmcburnieucf.github.io/portfolio/images/background-img.png') no-repeat center fixed; 
+    background: url('https://cmcburnieucf.github.io/portfolio/images/background-img.png') no-repeat center fixed; 
     background-size: cover;
 }
 .webpage-content {
