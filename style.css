@@ -19,6 +19,13 @@ body {
     padding-bottom: 12.5px;
 }
 
+.embed-container {
+    width: 60%;
+    height: 60%;
+    overflow: auto;
+    margin: 20px;
+}
+
 .updates-container {
     margin-bottom: 50px;
 }
