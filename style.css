@@ -2,10 +2,16 @@ body {
     background:url('https://cmcburnieucf.github.io/portfolio/images/background-img.png') no-repeat center fixed; 
     background-size: cover;
 }
+
+.page-wrapper {
+    overflow:auto;
+}
+
 .webpage-content {
     margin:30px 100px 30px 100px;
     padding:20px 50px 20px 50px;
     background-color: white;
+    overflow:auto;
 }
 
 .webpage-heading {
@@ -20,8 +26,8 @@ body {
 }
 
 .embed-container {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100px;
     overflow: auto;
     margin: 20px;
 }
