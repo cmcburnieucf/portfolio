@@ -1,107 +1,156 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Portfolio - Technical Communications (Job Materials) </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="/portfolio/style.css" />
-        <script defer src="/portfolio/loadComponents.js"></script>
-    </head>
-    <body>
-        <div class="page-wrapper">
-            <div id="website-navbar"></div>
-            
-            <!--
-            ================================================================================================================
-            =========================================== The Body Content Start =============================================
-            ================================================================================================================
-            -->
-            
-            <div class="webpage-content">
-                <div class="webpage-header">
-                    <h1 class="webpage-heading"> Job Materials </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Materials | Carla McBurnie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cmcburnieucf.github.io/portfolio/style.css">
+    <style>
+        .document-card {
+            border-left: 5px solid var(--bs-primary);
+            transition: all 0.3s ease;
+        }
+        .document-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .document-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .embed-responsive {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .feedback-item {
+            border-left: 3px solid var(--bs-primary);
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://cmcburnieucf.github.io/portfolio/index.html">Carla McBurnie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cmcburnieucf.github.io/portfolio/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="/technical-communications/" id="techCommDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Technical Communications
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="techCommDropdown">
+                            <li><a class="dropdown-item active" href="https://cmcburnieucf.github.io/portfolio/tech-com/job-materials.html">Job Materials</a></li>
+                            <li><a class="dropdown-item" href="https://cmcburnieucf.github.io/portfolio/tech-com/instructions.html">Instructions</a></li>
+                            <li><a class="dropdown-item" href="https://cmcburnieucf.github.io/portfolio/tech-com/proposal.html">Proposal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Job Materials Project</h1>
+            <p class="lead text-muted">Professional documents demonstrating technical communication skills</p>
+        </div>
+
+        <!-- Assignment Description -->
+        <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-3">Assignment Overview</h2>
+                <p>The Job Materials assignment required creating professional application documents for a specific position. The goal was to develop materials that effectively communicate qualifications while demonstrating technical writing principles like clarity, conciseness, and audience awareness.</p>
+                
+                <p>This project emphasized the importance of tailoring content to specific job requirements while maintaining professional standards. The assignment challenged us to balance technical accuracy with readability, ensuring documents would perform well with both applicant tracking systems and human reviewers.</p>
+                <p>The professional materials presented here were tailored specifically for the position described in the following job listing.</p>
+                <div class="embed-responsive mt-3 shadow">
+                    <iframe src="https://drive.google.com/file/d/1j9RVSW05nRdxVUjVPJ8J45CNYI8nSPkt/view?usp=drive_link"></iframe>
                 </div>
-                <div class="webpage-body">
-                    <div>
-                        <div class="wcontent"> <!-- The Introduction to the Webpage -->
-                            <p>
-                                The idea behind the first project of ENC3241, "Job Materials", was 
-                                to create a professional resume and cover letter for a given job 
-                                posting. Through this assignment, students, such as myself, learn 
-                                that some forms of technical communication are concerned about 
-                                getting an idea across to the audience by understanding what the 
-                                same audience is looking for. Being concise and utlizing certain 
-                                words and phrases to assist in displaying an idea is more important 
-                                than writing more to meet a word count -- a lesson that was not taught 
-                                in my earlier writing classes. Below is the given scenario that 
-                                revised documents, further below, were based on.
-                            </p>
-                        </div>
-                        <div class="embed-container" id="assignment-doc"> <!-- The Embedded Document -->
-                            <embed src="https://cmcburnieucf.github.io/portfolio/images/assignment-doc.pdf" type="application/pdf" width="100%" height="100%" />
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row justify-content-around">
-                            <div class="col"><!--Container for Resume-->
-                                <div class="webpage-header">
-                                    <h2 class="webpage-heading"> Resume </h2>
-                                </div>
-                                <div class="wcontent">
-                                    <p>
-                                        Since I knew how to create a resume, I based the one designed for 
-                                        this project on the others I have developed in the past. The job 
-                                        posting was for a software engineer intern, so I tailored the resume 
-                                        such that the individual viewing the document would know I could be 
-                                        qualified to fill in the role. As the original resume had a minor 
-                                        issue with formatting in one of the sections, I revised the document 
-                                        to fix that. I also decided to further showcase my ability to be a 
-                                        software engineer intern by including a new project, the first one 
-                                        underneath the "Projects" section. I was not able to include it before 
-                                        because the team had barely started on development.
-                                        Below is the revised resume.
-                                    </p>
-                                </div>
-                                <div class="embed-container" id="resume-doc"> <!-- The Embedded Resume -->
-                                    <embed src="https://cmcburnieucf.github.io/portfolio/images/resume-doc.pdf" type="application/pdf" width="100%" height="100%" />
-                                </div>
-                            </div>
-                            <div class="col"><!--Container for Cover Letter-->
-                                <div class="webpage-header">
-                                    <h2 class="webpage-heading"> Cover Letter </h2>
-                                </div>
-                                <div class="wcontent">
-                                    <p>
-                                        I had never written a cover letter, as the job postings I applied 
-                                        for never requested for such a document. So, to understand how to 
-                                        develop a sufficient cover letter, I viewed a variety of examples 
-                                        that were meant to by computer science students, such as myself. 
-                                        Using these examples as references, I created the original cover 
-                                        letter. Unfortunately, the document had errors in conciseness, tone, 
-                                        and grammar. To fix these errors, I revised the document based on 
-                                        the feedback I was given. The below is the resulting document. While 
-                                        not devoid of all the errors, it should correct some of the errors 
-                                        that existed in the original.
-                                    </p>
-                                </div>
-                                <div class="embed-container" id="coverletter-doc"> <!-- The Embedded Cover Letter -->
-                                    <embed src="https://cmcburnieucf.github.io/portfolio/images/coverletter-doc.pdf" type="application/pdf" width="100%" height="100%" />
-                                </div>
-                            </div>
+            </div>
+        </div>
+
+        <!-- Revision Process -->
+        <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-3">Revision Process</h2>
+                
+                <h3 class="h5 text-primary mt-4">Feedback Received</h3>
+                <div class="feedback-item">Include missing content for resume</div>
+                <div class="feedback-item">Fix formatting issues in the resume</div>
+                <div class="feedback-item">Include necessary information inside the cover letter</div>
+                <div class="feedback-item">Remove unnecessary information from the cover letter</div>
+
+                <h3 class="h5 text-primary mt-4">Feedback Implementation</h3>
+                <p>I implemented all feedback for the cover letter, creating a professional template that effectively presents my qualifications to potential employers. For the resume, I corrected all formatting issues while maintaining privacy by omitting certain personal details in the final version.</p>
+                
+                <div class="alert alert-primary mt-4">
+                    <i class="bi bi-lightbulb-fill me-2"></i>
+                    <strong>Key Insight:</strong> This revision process revealed how technical communication principles apply directly to job application materials. The need to balance completeness with conciseness, while maintaining professional standards, mirrors challenges faced in other technical writing contexts.
+                </div>
+            </div>
+        </div>
+
+        <!-- Revised Documents -->
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Revised Documents</h2>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Resume</h3>
+                        <p>The revised resume incorporates formatting improvements while maintaining privacy by omitting certain personal details. Changes include:</p>
+                        <ul>
+                            <li>Corrected alignment and spacing issues</li>
+                            <li>Standardized font usage throughout</li>
+                            <li>Improved section organization</li>
+                        </ul>
+                        <div class="embed-responsive mt-3 shadow">
+                            <iframe src="https://drive.google.com/file/d/10d4ML-9W3zDMXHC8JZy2qXFRNkl2BOTP/view?usp=drive_link"></iframe>
                         </div>
                     </div>
                     
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Cover Letter</h3>
+                        <p>The cover letter revisions focused on making the content more targeted and professional:</p>
+                        <ul>
+                            <li>Added specific qualifications matching job requirements</li>
+                            <li>Removed unnecessary personal details</li>
+                            <li>Improved overall flow and readability</li>
+                        </ul>
+                        <div class="embed-responsive mt-3 shadow">
+                            <iframe src="https://drive.google.com/file/d/16m80kZOSPlEImIWXm0px-WQwjaE_Zzl6/view?usp=drive_link"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <!--
-            ================================================================================================================
-            =========================================== The Body Content Stops =============================================
-            ================================================================================================================
-            -->
-            
-            <div id="website-footer"></div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+    </main>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
