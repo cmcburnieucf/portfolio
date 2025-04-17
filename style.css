@@ -1,38 +1,126 @@
+/* Base Styles */
+:root {
+  --bs-primary: #0d6efd;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary: #6c757d;
+  --bs-light: #f8f9fa;
+}
+
 body {
-    background:url('https://cmcburnieucf.github.io/portfolio/images/background-img.png') no-repeat center fixed; 
-    background-size: cover;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #212529;
+  background-color: #fefefe;
 }
 
-.page-wrapper {
-    overflow:auto;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #2c3e50;
 }
 
-.webpage-content {
-    margin:30px 100px 30px 100px;
-    padding:20px 50px 20px 50px;
-    background-color: white;
-    overflow:auto;
+.display-5 {
+  font-size: 2.5rem;
 }
 
-.webpage-heading {
-    text-align:center;
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
-.webpage-header {
-    margin-top: 4px;
-    padding-top: 4px;
-    margin-bottom: 10px;
-    padding-bottom: 12.5px;
+/* Navigation */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.embed-container {
-    width: 100%;
-    height: 100px;
-    overflow: auto;
-    margin: 20px;
+.navbar-brand {
+  font-weight: 600;
 }
 
-.updates-container {
-    margin-bottom: 50px;
+/* Cards */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
 }
 
+.card-body {
+  padding: 2rem;
+}
+
+/* Document Cards */
+.document-card {
+  background-color: white;
+  border-left: 5px solid var(--bs-primary);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.document-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.document-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* Feedback Items */
+.feedback-item {
+  border-left: 3px solid var(--bs-primary);
+  padding-left: 15px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+/* Embedded Documents */
+.embed-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  border-radius: 0.5rem;
+  background-color: var(--bs-light);
+  border: 1px solid #dee2e6;
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+/* Alerts */
+.alert {
+  border-radius: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .display-5 {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+}
