@@ -1,48 +1,217 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Portfolio - Technical Communications (Proposal) </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="/portfolio/style.css" />
-        <script defer src="/portfolio/loadComponents.js"></script>
-    </head>
-    <body>
-        <div class="page-wrapper">
-            <div id="website-navbar"></div>
-            
-            <!--
-            ================================================================================================================
-            =========================================== The Body Content Start =============================================
-            ================================================================================================================
-            -->
-            
-            <div class="webpage-content">
-                <div class="webpage-header">
-                    <h1 class="webpage-heading"> Proposal </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal | Carla McBurnie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cmcburnieucf.github.io/portfolio/style.css">
+    <style>
+        .feedback-card {
+            border-left: 4px solid var(--bs-primary);
+            transition: all 0.3s ease;
+        }
+        .feedback-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .objective-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .research-insight {
+            border-left: 4px solid #6f42c1;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://cmcburnieucf.github.io/portfolio/index.html">Carla McBurnie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cmcburnieucf.github.io/portfolio/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="techCommDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Technical Communications
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="techCommDropdown">
+                            <li><a class="dropdown-item" href="https://cmcburnieucf.github.io/portfolio/tech-com/job-materials.html">Job Materials</a></li>
+                            <li><a class="dropdown-item" href="https://cmcburnieucf.github.io/portfolio/tech-com/instructions.html">Instructions</a></li>
+                            <li><a class="dropdown-item active" href="https://cmcburnieucf.github.io/portfolio/tech-com/proposal.html">Proposal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Research Proposal Project</h1>
+            <p class="lead text-muted">Demonstrating rigorous research planning and professional proposal writing</p>
+        </div>
+
+        <!-- Assignment Overview -->
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Assignment Overview</h2>
+                <p>This assignment required creating a professional research grant proposal modeled after the UCF Office of Undergraduate Research's Student Research Grant format. The proposal needed to clearly articulate a research question, methodology, expected outcomes, and budget justification within specific section requirements and word limits.</p>
+                
+                <div class="objective-card mt-4">
+                    <h3 class="h5 text-primary">Key Objectives</h3>
+                    <ul>
+                        <li>Develop a compelling research question with academic significance</li>
+                        <li>Design rigorous research methods appropriate for the field</li>
+                        <li>Create a realistic budget justification within $1,500 limit</li>
+                        <li>Maintain professional tone and formatting throughout</li>
+                        <li>Synthesize relevant literature to contextualize the research</li>
+                    </ul>
                 </div>
-                <div class="webpage-body">
-                    <div class="intro-wrapper">
-                        <p class="">
-                            n/a
-                        </p>
+
+                <p class="mt-3">The proposal format followed strict section requirements including a project title, objective statement, background and significance explanation, research methods description, expected outcomes analysis, literature review, preliminary work summary, IRB/IACUC statement, and detailed budget.</p>
+            </div>
+        </div>
+
+        <!-- Revision Process -->
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Revision Process</h2>
+                
+                <h3 class="h5 text-primary mt-4">Feedback Received</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="feedback-card mb-3">
+                            <div class="card-body">
+                                <h4 class="h6">Tone Consistency</h4>
+                                <p>The document needed more consistent professional tone across all sections</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="embed-container" id="proposal-doc">
-                        <embed src="https://cmcburnieucf.github.io/portfolio/images/proposal-doc.pdf" type="application/pdf" width="100%" height="100%"/>
+                    <div class="col-md-6">
+                        <div class="feedback-card mb-3">
+                            <div class="card-body">
+                                <h4 class="h6">Research Question Focus</h4>
+                                <p>The proposal required sharper focus on the improved research question throughout</p>
+                            </div>
+                        </div>
                     </div>
-                    
+                </div>
+
+                <h3 class="h5 text-primary mt-4">Implemented Revisions</h3>
+                <p>I carefully addressed all feedback in my revision process to create a stronger final proposal:</p>
+                
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="feedback-card">
+                            <div class="card-body">
+                                <h4 class="h6">Tone Standardization</h4>
+                                <ul class="small mb-0">
+                                    <li>Edited all sections to maintain consistent academic tone</li>
+                                    <li>Ensured uniform formatting throughout document</li>
+                                    <li>Standardized technical terminology usage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feedback-card">
+                            <div class="card-body">
+                                <h4 class="h6">Research Question Refinement</h4>
+                                <ul class="small mb-0">
+                                    <li>Tightened focus on the core research question</li>
+                                    <li>Strengthened connections between sections</li>
+                                    <li>Added clearer transitions emphasizing research objectives</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success mt-4">
+                    <strong>Outcome:</strong> These revisions created a more cohesive, professional proposal that will serve as an excellent template for future research funding applications.
                 </div>
             </div>
-            
-            <!--
-            ================================================================================================================
-            =========================================== The Body Content Stops =============================================
-            ================================================================================================================
-            -->
-            
-            <div id="website-footer"></div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+
+        <!-- Technical Communication Insights -->
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Technical Communication Insights</h2>
+                
+                <div class="research-insight p-4 mb-4">
+                    <h3 class="h5 text-purple">Audience Awareness in Research Proposals</h3>
+                    <p>This project taught me that successful research proposals must simultaneously address multiple audiences with different priorities. Review committees typically include both specialists in your field who evaluate technical merit, and administrators who assess feasibility and alignment with institutional goals. My proposal needed to balance detailed methodology for experts with clear significance statements for generalists.</p>
+                    <p>I learned to use executive summaries strategically, highlight interdisciplinary relevance, and frame technical content within broader impacts. Future proposals will benefit from even more explicit signaling of content importance to different reader types.</p>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Structural Requirements</h3>
+                        <p>The strict section requirements demonstrated how standardized formats improve review efficiency while challenging writers to connect discrete components into a coherent narrative. I developed strategies for:</p>
+                        <ul>
+                            <li>Maintaining flow despite standardized headings</li>
+                            <li>Creating internal references between sections</li>
+                            <li>Balancing repetition with new information</li>
+                            <li>Meeting word count restrictions without sacrificing clarity</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Budgets as Persuasive Documents</h3>
+                        <p>Creating the budget section revealed financial justification as a form of technical rhetoric. Each expense required:</p>
+                        <ul>
+                            <li>Clear connection to research activities</li>
+                            <li>Evidence of cost-effectiveness</li>
+                            <li>Appropriate categorization</li>
+                            <li>Alignment with institutional guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Proposal Document -->
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Final Proposal Document</h2>
+                <p>The embedded document below showcases my revised research proposal, demonstrating the principles of professional technical communication learned through this project. This proposal will serve as a valuable template for future research funding applications.</p>
+                
+                <!-- Embedded Proposal Document -->
+                <div class="iframe-container">
+                    <iframe src="https://cmcburnieucf.github.io/portfolio/images/proposal-doc.pdf"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
