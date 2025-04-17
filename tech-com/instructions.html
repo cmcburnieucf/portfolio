@@ -1,101 +1,265 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Portfolio - Technical Communications (Instructions) </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="/portfolio/style.css" />
-        <script defer src="/portfolio/loadComponents.js"></script>
-    </head>
-    <body>
-        <div class="page-wrapper">
-            <div id="website-navbar"></div>
-            
-            <!--
-            ================================================================================================================
-            =========================================== The Body Content Start =============================================
-            ================================================================================================================
-            -->
-            
-            <div class="webpage-content">
-                <div class="webpage-header">
-                    <h1 class="webpage-heading"> Instructions </h1>
-                </div>
-                <div class="webpage-body">
-                    <div class="intro-wrapper">
-                        <p>
-                            The second project of ENC3241, "Instructions", had students develop 
-                            thorough instructions on a software-related technology. Each student 
-                            were able to choose their own software for the project. This 
-                            assignment had not only showed students how to create professional 
-                            instructions but also how to write a document with given 
-                            constraints. 
-                        </p>
-                        <p>
-                            In this particular scenario, the instructions had to be based on a 
-                            software, not any other type of technology. Furthermore, the word 
-                            count was limited to one thousand words, allowing students to focus 
-                            only on the topic they chose for their instructions. As an effect of 
-                            these requirements, students had to have chosen a very specific 
-                            topic as to not veer off-topic.
-                        </p>
-                        <p>
-                            For this project, I initially believed that a graphics library would 
-                            count as software. It was written by someone else, who developed it 
-                            so that it could be used across multiple programming languages, 
-                            including Rust, which I used in my instructions. It was also similar 
-                            to other types of software, where users had to understand how it 
-                            worked in regards to the functions used, the arguments in these 
-                            functions, and what steps needed to be done first in order to obtain 
-                            the desired result. Since I could not cover every aspect of the 
-                            library, I decided to demonstrate a simple example utilizing it. 
-                            However, I came across multiple problems that I did not see until 
-                            midway of the developing the instructions.
-                        </p>
-                        <p>
-                            The first problem was that the reviewers had problems understanding 
-                            what the topic was. One assumed it was just code, which was somewhat 
-                            incorrect because, while it is true programming was involved, the 
-                            instructions were more about using a software for programming. 
-                            Another assumed the library was a computer program, which is also 
-                            incorrect because a library is not a finished product that is made 
-                            to run by itself, it is to give the tools to a real computer program 
-                            in order to execute as the developer desires. If I had properly 
-                            explained the context of the instructions in an introduction 
-                            paragraph, I am sure the readers would have understood it better.
-                        </p>
-                        <p>
-                            The second, and the biggest problem, was the topic I chose. It was 
-                            too vague to develop proper instructions to explain all the critical 
-                            details and still meet the word count requirement. In the reviews I 
-                            received, the need for more detail was a prominent feature. However, 
-                            if I did that and tried to explain the creation of program piece by 
-                            piece, I would have gone over the word count of one thousand words. 
-                            In hindsight, I believe I should have changed the topic so I could 
-                            focus on explaining the library rather than the programming itself.
-                        </p>
-                        <p>
-                            In the end, I decided that, without recreating the project from 
-                            scratch, I could not do much to revise the project to meet the 
-                            expectations of the audience. In the below document, I only revised 
-                            the formatting and grammatical issues.
-                        </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Instructions | Carla McBurnie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cmcburnieucf.github.io/portfolio/style.css">
+    <style>
+        .step-card {
+            border-left: 4px solid var(--bs-primary);
+            transition: all 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--bs-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .instruction-image {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            max-height: 400px;
+            object-fit: contain;
+        }
+        .warning-note {
+            border-left: 4px solid #ffc107;
+            background-color: #fff8e1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://cmcburnieucf.github.io/portfolio/index.html">Carla McBurnie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://cmcburnieucf.github.io/portfolio/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="/technical-communications/" id="techCommDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Technical Communications
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="techCommDropdown">
+                            <li><a class="dropdown-item" href="https://cmcburnieucf.github.io/portfolio/tech-com/job-materials.html">Job Materials</a></li>
+                            <li><a class="dropdown-item active" href="https://cmcburnieucf.github.io/portfolio/tech-com/instructions.html">Instructions</a></li>
+                            <li><a class="dropdown-item" href="https://cmcburnieucf.github.io/portfolio/tech-com/proposal.html">Proposal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Technical Instructions Project</h1>
+            <p class="lead text-muted">Creating clear, user-friendly documentation for technical processes</p>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Project Overview</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>This assignment required creating a set of technical 
+                            instructions for a specific software related task. I 
+                            chose to document the process of utilizing a graphics 
+                            library, SFML, to draw a circle on a window screen, 
+                            through Rust code, as this was interesting topic to cover 
+                            and there were not many reliable resources that did.</p>
+                        <p>The goal was to produce documentation that would be 
+                            accessible to those who had programming knowledge of 
+                            Rust and knew where to locate specific functions from
+                            the SFML library for C++, but needed to know how to use
+                            those functions in Rust</p>
                     </div>
-                    
-                    <div class="embed-container" id="instructions-doc">
-                        <embed src="https://cmcburnieucf.github.io/portfolio/images/instructions-doc.pdf" type="application/pdf" width="100%" height="100%"/>
+                    <div class="col-lg-6">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h3 class="h6">Key Requirements</h3>
+                                <ul>
+                                    <li>Clear, sequential steps</li>
+                                    <li>Visual aids for complex steps</li>
+                                    <li>Troubleshooting section</li>
+                                    <li>Consistent formatting</li>
+                                    <li>Audience-appropriate language</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!--
-            ================================================================================================================
-            =========================================== The Body Content Stops =============================================
-            ================================================================================================================
-            -->
-            
-            <div id="website-footer"></div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+
+        <!-- Revision Process -->
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Revision Process</h2>
+                
+                <h3 class="h5 text-primary mt-4">Initial Approach</h3>
+                <p>My first draft focused heavily on technical accuracy but lacked some user experience considerations:</p>
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                        <div class="card step-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="step-number">1</div>
+                                    <div>
+                                        <h4 class="h6">Shallow Explanations</h4>
+                                        <p class="small mb-0">The lack of specificity caused confusion among those with not much technical experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card step-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="step-number">2</div>
+                                    <div>
+                                        <h4 class="h6">Language Mechanical Errors</h4>
+                                        <p class="small mb-0">Problems with conciseness and grammar existed throughout the document</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="h5 text-primary mt-5">Key Improvements</h3>
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                        <div class="card step-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="step-number">1</div>
+                                    <div>
+                                        <h4 class="h6">Improved Content Structure</h4>
+                                        <p class="small mb-0">Restructured the content document so it was more concise</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card step-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="step-number">2</div>
+                                    <div>
+                                        <h4 class="h6">Corrected Language Mechanical Errors</h4>
+                                        <p class="small mb-0">Fixed the grammatical errors that were in the writing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+                <div class="alert alert-primary mt-4">
+                    <i class="bi bi-lightbulb-fill me-2"></i>
+                    <strong>Insight:</strong> The revision process revealed that even technically accurate instructions
+                    can fail if they do not anticipate user confusion points or provide adequate explanations on certain ideas.
+                    However, because I was required to meet a word count limit, only minor improvements could be applied.
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Communication Learnings -->
+        <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Technical Communication Insights</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Audience Awareness</h3>
+                        <p>Creating these instructions taught me to better analyze my audience's knowledge level. 
+                        I initially assumed too much familiarity with users knowing how to program in integration 
+                        development environments (IDEs), which peer review 
+                        identified as a stumbling block. In the future, I will ensure to be specific in what my 
+                        readers will be expected to know before moving on to the rest of the instructions.</p>
+                        <p>I learned to balance completeness with conciseness: providing enough detail to be 
+                        helpful without overwhelming the readers. </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Visual Communication</h3>
+                        <p>The project demonstrated how visual elements can enhance or detract from instructions. 
+                        For every sub-step, I included a screenshot that displayed the resulting line of code.
+                        For the end of every step, there was a snippet that showed the all of the lines of code 
+                        that were the result of the current and previous steps. This way, readers could follow along
+                        and check themselves in case they run into an error.</p>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Error Handling</h3>
+                        <p> Through this assignment, I learned error-handling in technical instructions 
+                        should proactively anticipate common user mistakes by including clear 
+                        troubleshooting steps, visual warnings, and conditional language. 
+                        Effective instructions also isolate error causes and provide specific 
+                        recovery actions to maintain user confidence and workflow continuity. 
+                        In future instruction development, I will include:</p>
+                        <ul>
+                            <li>"Warning" callouts for common pitfalls</li>
+                            <li>Verification steps confirming correct setup</li>
+                            <li>Troubleshooting sections designated for each kind of error messages</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-primary">Document Design</h3>
+                        <p>The revision process improved my understanding of information design principles:</p>
+                        <ul>
+                            <li>Using consistent numbering and bullet styles</li>
+                            <li>Implementing progressive disclosure for advanced options</li>
+                            <li>Creating effective white space between steps</li>
+                            <li>Standardizing terminology throughout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Instructions -->
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="h4 mb-4">Final Instructions Document</h2>
+                <p>Below is the embedded version of my revised technical instructions. 
+                The document demonstrates some of
+                the principles of clear technical communication learned through this project.
+                It will serve as an example for future instructions in what to
+                avoid</p>
+                
+                <!-- Embedded Instructions Document -->
+                <div class="ratio ratio-16x9 mt-4 shadow">
+                    <iframe src="https://drive.google.com/file/d/1sxNJheagBJN75e1CSGqXaPrxFSzwhxMb/view?usp=sharing"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
